@@ -11,3 +11,5 @@ uuid
 tavily-python
 python-dotenv
 google-genai
+streamlit
+requests
