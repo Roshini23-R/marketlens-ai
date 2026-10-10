@@ -77,18 +77,9 @@ Return this exact JSON structure:
 
     client = genai.Client(
         api_key=GEMINI_API_KEY,
-        http_options=types.HttpOptions(
-            timeout=120000,
-            retry_options=types.HttpRetryOptions(
-                initial_delay=2.0,
-                max_delay=30.0,
-                exp_base=2.0,
-                attempts=5,
-                jitter=1.0,
-                http_status_codes=[408, 429, 500, 502, 503, 504],
-            ),
-        ),
-    )
+        
+            )
+   
 
     try:
         gemini_response = client.models.generate_content(
